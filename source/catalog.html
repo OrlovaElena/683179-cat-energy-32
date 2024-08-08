@@ -45,7 +45,7 @@
       <div class="catalog__wrapper">
         <h1 class="catalog__title">Каталог продукции</h1>
         <article class="catalog__item card">
-          <div class="card-wrapper">
+          <div class="card__wrapper">
             <a href="#">
               <h3 class="card__title">Cat Energy PRO 500 г</h3>
             </a>
@@ -68,6 +68,15 @@
             </section>
           </div>
         </article>
+        <nav class="catalog__pagination">
+          <div class="catalog__item card">
+            <a class="card__link" href="#">
+              <h3 class="card__title">Показать еще 100500 товаров</h3>
+            </a>
+            <p class="card__text">На самом деле вкусов гораздо больше!</p>
+            <button class="card__button card__button--to-all button button--secondary" type="button">Показать все</button>
+          </div>
+        </nav>
       </div>
     </section>
     <section class="accessories">
@@ -111,11 +120,11 @@
     <section class="subscribe">
       <h2 class="subscribe__title catalog-title">Акции и новинки</h2>
       <p class="subscribe__lead">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
-      <form class="subscribe-form" action="#" method="post">
+      <form class="subscribe__form" action="#" method="post">
         <label class="subscribe__label">
           <input class="subscribe__input" type="email" name="subscribe__input" placeholder="Ваш e-mail" value="kuklachev@gmail.com">
         </label>
-        <button class="button" type="button">Подписаться</button>
+        <button class="subscribe__button button button--primary" type="button">Подписаться</button>
       </form>
     </section>
     <section class="map">
