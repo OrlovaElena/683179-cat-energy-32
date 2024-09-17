@@ -63,12 +63,11 @@
   justify-content: center;
 
   @media (min-width: $tablet-width) {
-
     height: 50px;
   }
 
-  @media (min-width: $desktop-width) {
-  }
+  // @media (min-width: $desktop-width) {
+  // }
 }
 
 .site-list__link {
