@@ -21,11 +21,15 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
+  // width: fit-content;
+  // text-align: start;
+  // align-content: start;
 
   @media (min-width: $tablet-width) {
     font-size: 32px;
     line-height: 32px;
-    padding: 0 0 80px 40px;
+    padding: 0 0 80px;
+    align-self: start;
 
     &.decor::after {
       display: none;

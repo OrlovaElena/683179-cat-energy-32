@@ -22,14 +22,12 @@
   font-weight: 400;
 
   @media (min-width: $tablet-width) {
-    padding-left: 40px;
     padding-bottom: 66px;
     font-size: 32px;
     line-height: 32px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 0;
     padding-bottom: 72px;
     font-size: 40px;
     line-height: 40px;

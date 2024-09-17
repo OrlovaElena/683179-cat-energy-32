@@ -2,7 +2,7 @@
   padding: 20px 0 25px;
 
   @media (min-width: $tablet-width) {
-    background: linear-gradient(to top, $contrast-brand-hue 84%, transparent 16%);
+    background: linear-gradient(to top, $contrast-brand-hue 430px, transparent 430px);
     padding: 14px 0 40px;
 
     &.decor::after {

@@ -11,6 +11,7 @@
     border: 2px solid $contrast-brand-hue;
     margin-top: auto;
     padding: 50px 37px 40px;
+    height: 430px;
 
     &.decor::after {
       display: none;
@@ -43,11 +44,11 @@
   grid-column: 1 / -1;
 
   @media (min-width: $tablet-width) {
-    margin-top: 54px;
+    margin-top: 50px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 54px;
+
   }
 }
 
@@ -89,7 +90,7 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 18px;
-    padding-bottom: 90px;
+    padding-bottom: 80px;
     width: 170px; // надо перенести в html
   }
 }
