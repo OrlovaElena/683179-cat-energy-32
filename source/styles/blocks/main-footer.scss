@@ -3,18 +3,18 @@
 }
 
 .main-footer__wrapper {
-  padding: 20px 0;
+  padding: 20px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding: 55px 0;
+    padding: 45px 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 66px 0;
+    padding: 56px 110px;
   }
 }
 

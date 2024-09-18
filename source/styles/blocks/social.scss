@@ -14,7 +14,6 @@
   width: 43px;
   height: 43px;
 
-
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: center;
@@ -24,8 +23,19 @@
   }
 }
 
-.social__link:hover {
+.social-icon {
+  color: $one-of-dark;
+  transition: $transition;
+}
+
+.social__link:hover .social-icon {
   @include social-hover;
 }
 
-// .social__img {}
+.social__link:focus .social-icon {
+  @include social-hover;
+}
+
+.social__link:active .social-icon {
+  @include social-active;
+}

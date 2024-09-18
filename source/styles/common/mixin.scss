@@ -9,6 +9,12 @@
   }
 }
 
+@mixin max-width {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
 
 @mixin logo-hover {
   opacity: 0.8;
@@ -64,7 +70,7 @@
 }
 
 @mixin social-hover {
-  fill: #68b738;
+  color: #68b738;
 }
 
 @mixin social-active {

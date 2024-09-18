@@ -14,6 +14,7 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  transition: $transition;
 
   @media (min-width: $tablet-width) {
     align-self: center;
@@ -36,15 +37,30 @@
 .copyright__link::after {
   content: "";
   position: absolute;
+  background-color: $one-of-dark;
   right: 0;
   top: 0;
   width: 27px;
   height: 34px;
-  background-image: url("../../icons/logo_html.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
+  mask-image: url("../../icons/logo_html.svg");
+  mask-size: contain;
+  mask-repeat: no-repeat;
   cursor: pointer;
+  transition: $transition;
+}
 
-  // @media (min-width: $tablet-width) {
-  // }
+.copyright__link:hover::after {
+  background-color: $brand-hue;
+}
+
+.copyright__link:focus::after {
+  background-color: $brand-hue;
+}
+
+.copyright__link:active::after {
+  background-color: rgba(104, 183, 56, 0.7);
+}
+
+.copyright__text:active {
+  color: rgba(68, 68, 68, 0.7);
 }

@@ -4,6 +4,7 @@
 
 .features__wrapper {
   padding: 20px 0 49px;
+  margin: 0 20px;
 
   &.decor::after {
     display: none;
@@ -11,6 +12,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 45px 0 104px;
+    margin: 0 30px;
 
     &.decor::after {
       display: block;
@@ -19,6 +21,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 71px 0 49px;
+    margin: 0 110px;
 
     &.decor::after {
       display: none;

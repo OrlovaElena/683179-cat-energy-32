@@ -83,6 +83,7 @@
 .main-header__wrapper {
   padding: 11px 0 14px;
   position: relative;
+  margin: 0 20px;
 
   @media (min-width: $tablet-width) {
     padding: 25px 0;
@@ -98,7 +99,7 @@
   @media (min-width: $desktop-width) {
     padding: 57px 0 25px;
     grid-column: 1 / -1;
-    margin: 0 110px;
+    margin: 0;
   }
 }
 
@@ -124,3 +125,4 @@
     margin-bottom: 0;
   }
 }
+

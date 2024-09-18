@@ -2,6 +2,7 @@
   background-color: $contrast-brand-hue;
 
   @media (min-width: $tablet-width) {
+    background: linear-gradient(to top, $contrast-brand-hue 43%, transparent 43%);
     background-color: $background-color;
     padding-bottom: 0;
   }
@@ -17,19 +18,17 @@
 
 .example__wrapper {
 
-  padding-bottom: 40px;
+  padding: 0 20px 40px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 0;
+    padding: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 224px;
-    background: linear-gradient(to top, $contrast-brand-hue 69%, transparent 25%);
-    padding-bottom: 76px;
-    margin: 0 110px;
+    padding: 0 110px 76px;
   }
 }
 
@@ -87,7 +86,6 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    background: linear-gradient(to top, $contrast-brand-hue 65%, transparent 35%);
     padding-top: 102px;
     padding-bottom: 102px;
   }

@@ -3,14 +3,15 @@
   align-items: center; /* Centers items vertically */
   justify-content: space-between;
   width: auto;
-  margin: 0 20px;
+  // margin: 0 20px;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    // margin: 0;
   }
 
   @media (min-width: $desktop-width) {
     justify-content: start;
+    padding: 0 110px;
   }
 }
 
