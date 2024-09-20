@@ -12,6 +12,10 @@
   height: 1px;
   background-color: $accent-secondary-text-color;
 
+  .main-header & {
+    width: calc(100%);
+  }
+
   @media (min-width: $tablet-width) {
     width: calc(100% + 60px);
   }

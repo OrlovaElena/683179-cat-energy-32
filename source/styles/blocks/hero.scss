@@ -16,6 +16,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto 1fr;
+    z-index: auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -23,6 +24,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto 1fr;
+    padding-bottom: 82px;
   }
 }
 
@@ -81,6 +83,7 @@
   @media (min-width: $tablet-width) {
     width: 709px;
     height: 609px;
+    z-index: auto;
   }
 
   @media (min-width: $desktop-width) {

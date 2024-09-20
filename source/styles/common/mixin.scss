@@ -73,15 +73,15 @@
 }
 
 @mixin social-active {
-  color: rgba(104, 183, 56, 0.3);
+  color: rgba(104, 183, 56, 0.6);
 }
 
 @mixin main-menu-white-hover {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 @mixin main-menu-white-focus {
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 @mixin main-menu-black-hover {

@@ -3,15 +3,15 @@
   color: $main-text-color;
   font-size: 20px;
   line-height: 20px;
-  display: grid;
-  grid-template-columns: 1fr;
+  // display: grid;
+  // grid-template-columns: 1fr;
   position: relative;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, auto);
+    // grid-template-columns: 1fr;
+    // grid-template-rows: repeat(2, auto);
     padding-bottom: 0;
 
     .decor::after {
@@ -22,39 +22,38 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto;
-    padding-bottom: 82px;
   }
 }
 
-.main-header::before {
-  content: "";
-  position: absolute;
+.hero {
   background-image:
-    linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+    linear-gradient(rgba(104, 183, 56, 0.85) 60%,
+    #ffffff 60%),
     image-set(
       url("../../images/index-background-mobile@1x.webp") type("image/webp") 1x,
       url("../../images/index-background-mobile@2x.webp") type("image/webp") 2x,
       url("../../images/index-background-mobile@1x.png") type("image/png") 1x,
       url("../../images/index-background-mobile@2x.png") type("image/png") 2x
     ),
-    linear-gradient(to bottom left, #3f3e43, #525157);
-  background-position: top;
+    linear-gradient(90deg, #4f4e54 50%, #424147 50%);
+  background-position-x: 50%;
+  background-position-y: 0;
   background-repeat: no-repeat;
-  background-size: contain;
-  width: 100%;
-  height: 302px;
-  z-index: 1;
-  top: 65px;
-  left: 0;
 
   @media (min-width: $tablet-width) {
     background: none;
     grid-row: 3 / 4;
+    z-index: auto;
   }
+}
 
+.main-header::before {
   @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
     background-image:
       linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
       image-set(
@@ -70,7 +69,7 @@
     grid-row: 1 / -1;
     grid-column: 2 / -1;
     width: 100%;
-    height: 100%;
+    height: 694px;
     top: 0;
     left: 0;
   }
@@ -96,8 +95,9 @@
 }
 
 .main-header__wrapper {
-  padding: 11px 0 14px;
   position: relative;
+  grid-row: 1 / 2;
+  grid-column: 1 / -1;
 
   @media (min-width: $tablet-width) {
     padding: 25px 0;
@@ -120,8 +120,10 @@
 .main-header__logo {
   flex-shrink: 0;
 
+
   @media (min-width: $tablet-width) {
     height: 50px;
+    width: fit-content;
 
     &:not(:last-of-type) {
       margin-right: 15px;
@@ -143,8 +145,6 @@
     margin-bottom: 0;
     padding-left: 120px;
     padding-right: 100px;
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
   }
 
   @media (min-width: $desktop-width) {

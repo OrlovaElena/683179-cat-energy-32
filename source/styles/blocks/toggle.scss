@@ -3,8 +3,10 @@
   width: 28px;
   height: 24px;
   border: none;
-
+  align-self: center;
+  justify-content: center;
   cursor: pointer;
+
 
   @media (min-width: $tablet-width) {
     display: none;
